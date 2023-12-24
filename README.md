@@ -2,11 +2,11 @@
 
 ##### The games we created:
 
-```
-Minesweeper
-Snake
-Memory game
-```
+
+1. Minesweeper
+2. Snake
+3. Memory game
+
 
 ### Team:
 

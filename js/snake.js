@@ -124,7 +124,7 @@ function drawSnake() {
     SNAKE_PARTS.shift()
   }
 
-//head
+// head
   ctx.fillStyle = 'green'
   ctx.fillRect(HEAD_X, HEAD_Y, TILE_SIZE, TILE_SIZE)
 
@@ -133,7 +133,7 @@ function drawSnake() {
 }
 
 function drawFood() {
-//food
+// food
   ctx.fillStyle = 'red'
   ctx.fillRect(FOOD_X, FOOD_Y, TILE_SIZE, TILE_SIZE)
 
