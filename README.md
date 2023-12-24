@@ -3,15 +3,15 @@
 ##### The games we created:
 
 
-1. Minesweeper
-2. Snake
-3. Memory game
+1. Memory game
+2. Minesweeper
+3. Snake
 
 
 ### Team:
 
-- **Maksim Volkmann**
-- **Lauris Stirna**
 - **Nikita B**
+- **Lauris Stirna**
+- **Maksim Volkmann**
 
-Live version [here](https://riofalk.github.io/Memory_game/).
+Live version [here](https://maksim-volkmann.github.io/minigames-hub/).
