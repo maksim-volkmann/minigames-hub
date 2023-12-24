@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap");
+
+body {
+  background-color: #ced6e0;
+  height: 100vh;
+}
+
+.snake-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snake-h1 {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 40px;
+  background: linear-gradient(160deg, #1abc9c, rgba(255, 0, 0, 0) 80.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 50.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 90.71%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: default;
+}
+.snake-h1:hover {
+  background: linear-gradient(160deg, #f93e3e, rgba(255, 0, 0, 0) 80.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 50.71%),
+    linear-gradient(336deg, rgba(218, 204, 12, 0.8), rgba(0, 0, 255, 0) 90.71%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#main-canvas {
+  color: #fff;
+  font-size: 30px;
+  outline: rgb(25, 119, 156) 3px solid;
+}
+
+.snake-buttons {
+  width: 400px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.snake-buttons .button-text {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  font-size: 20px;
+}
+.snake-buttons .btn-shadow {
+  width: 100px;
+  height: 55px;
+  border-radius: 8px;
+  border-bottom: 6px solid rgba(0, 0, 0, 0.5);
+  transition-duration: 0.3s;
+}
+.snake-buttons .btn-shadow:hover {
+  border-bottom: 8px solid rgba(0, 0, 0, 0.5);
+}
+.snake-buttons .btn-shadow:active {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+}
+.snake-buttons .btn {
+  width: 100px;
+  height: 53px;
+  border: 0;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.snake-buttons .btn:hover {
+  transform: translateY(5px);
+}
+.snake-buttons .btn:active {
+  transform: translateY(10px);
+}
+.snake-buttons .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.snake-buttons .btn-start {
+  background-color: #48c9b0;
+  box-shadow: 0px 5px #0d5e4e;
+}
+.snake-buttons .btn-start:hover {
+  background-color: #1abc9c;
+  box-shadow: 0px 3px #0d5e4e;
+}
+.snake-buttons .btn-start:active {
+  box-shadow: 0px 0px;
+}
+.snake-buttons .btn-restart {
+  background-color: #fa6565;
+  box-shadow: 0px 5px #7d1f1f;
+}
+.snake-buttons .btn-restart:hover {
+  background-color: #f93e3e;
+  box-shadow: 0px 3px #7d1f1f;
+}
+.snake-buttons .btn-restart:active {
+  box-shadow: 0px 0px;
+}
+
+.howtoplay {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+} /*# sourceMappingURL=snake.css.map */

@@ -1,0 +1,116 @@
+:root {
+    --custom-white: #FFFDFA;
+    --main-color:#ADD8E6;
+    --main-color-dark: #8AC7DB;
+    --accent-color: #67B7D1;
+}
+
+main {
+    font-family: 'Roboto Mono', monospace;
+    border-top: solid 3px var(--main-color-dark);
+    display: flex;
+    padding: 5vh 0vh;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+}
+
+
+
+.overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.game-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.bomb-count,
+.timer,
+.red-flag-count,
+.new-gameBtn {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 2.5vw;
+    padding: 0.5vw 0vw; 
+    height: 10vh;
+    width: 12.5vw;
+    border-radius: 1vh;
+    margin-top: 5vh;
+    background-color: var(--main-color-dark);
+}
+
+.new-gameBtn {
+    border: none;
+    background-color: var(--custom-white);
+    transition: 0.5s;
+}
+
+.new-gameBtn:hover {
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, 
+    rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, 
+    rgb(255, 156, 85) 0px 0px 0px 12px, 
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+    cursor: pointer;
+    font-size: 2.7vw;
+}
+
+.game-board-wrapper {
+    width: 85vh;
+    height: 85vh;
+    background-color: var(--custom-white);
+    border-radius: 5vh;
+}
+
+
+.game-board {
+    transform: translate(2.5vh, 2.5vh);
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-board > div {
+    transition: 0.5s;
+    border-radius: 1vh;
+    box-sizing: border-box;
+    border: 0.35vh solid var(--custom-white);
+    background-color: var(--main-color-dark);
+    font-size: 5vh;
+    width: 8vh;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.game-outcome-msg {
+    font-size: 5vh;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.game-board > div:hover {
+    background-color: var(--accent-color);
+
+}
+
+footer {
+    background-color: var( --main-color-dark);
+    border-top: solid #67B7D1 3px;
+}
+
+.clicked {
+    background-color: var(--main-color) !important;
+}

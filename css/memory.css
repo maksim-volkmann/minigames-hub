@@ -1,0 +1,141 @@
+.wrapper-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.wrapper-main h1 {
+  color: #011627;
+  font-size: 64px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.memory-game {
+  background: #00c9ff;
+  background: -webkit-linear-gradient(to left, #92fe9d, #00c9ff);
+  background: linear-gradient(to left, #92fe9d, #00c9ff);
+  width: 900px;
+  height: 700px;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.33% - 10px);
+  margin: auto;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.4s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.4s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  position: absolute;
+  border-radius: 8px;
+  background: #834d9b;
+  background: -webkit-linear-gradient(to left, #d04ed6, #834d9b);
+  background: linear-gradient(to left, #d04ed6, #834d9b);
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 920.01px) {
+  .memory-game {
+    width: 700px;
+    height: 500px;
+  }
+  .front,
+  .back {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 720.01px) {
+  .wrapper-main h1 {
+    margin-top: 20px;
+  }
+  .wrapper-main img {
+    margin-top: 10px;
+  }
+  .memory-game {
+    width: 600px;
+    height: 580px;
+  }
+  .memory-card {
+    width: 30%;
+    height: calc(33.33% - 70px);
+    margin: 10px auto;
+  }
+  .front,
+  .back {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 610.01px) {
+  .wrapper-main h1 {
+    font-size: 38px;
+    margin-top: 40px;
+  }
+  .wrapper-main img {
+    margin-top: 10px;
+  }
+  .memory-game {
+    width: 500px;
+    height: 580px;
+  }
+  .memory-card {
+    width: 30%;
+    height: calc(33.33% - 70px);
+    margin: 10px auto;
+  }
+  .front,
+  .back {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 520.01px) {
+  .wrapper-main h1 {
+    font-size: 28px;
+    margin-top: 46px;
+  }
+  .wrapper-main img {
+    margin-top: 10px;
+  }
+  .memory-game {
+    width: 300px;
+    height: 350px;
+  }
+  .memory-card {
+    width: 30%;
+    height: calc(33.33% - 50px);
+    margin: 10px auto;
+  }
+  .front,
+  .back {
+    padding: 20px;
+  }
+}

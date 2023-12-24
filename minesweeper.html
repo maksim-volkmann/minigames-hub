@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper ☀️</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/minesweeper.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="wrapper-header">
+          <a href="index.html">
+            <img src="img/general/logo.png" alt="Logo" title="Minigames" />
+          </a>
+          <a href="index.html">
+            <h1>MINIGAMES</h1>
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a href="memory.html">Memorygame</a>
+            </li>
+            <li class="nav-link">
+              <a href="minesweeper.html">Minesweeper</a>
+            </li>
+            <li class="nav-link">
+              <a href="snake-game.html">Snake</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+        <main>
+
+            <div class="game-stats">
+                <div class="bomb-count"></div>
+                <div class="red-flag-count"></div>
+                <div class="timer">⌛ 000</div>
+                <button class="new-gameBtn">Restart</button>
+            </div>
+            <div class="game-board-wrapper">
+
+
+                <div id="game-results">
+
+                </div>
+
+
+                <div class="game-board" oncontextmenu="return false;"> </div>   
+            </div>
+             
+        </main>
+      <footer>
+        <span>Maksim Volkmann | Lauris Stirna | Nikita B</span>
+        <p>Copyright © 2022-2022</p>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/minesweeper.js" defer></script>
+  </body>
+</html>
